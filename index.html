@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Purni — A Special Note</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div id="slider">
+
+      <!-- Page 1: Welcome -->
+
+      <section class="page page1" data-page="1">
+
+        <div class="card">
+
+          <div class="type" data-text="Hyy DikSha , ye page maine specially apne final goodbye ke liye banaya. firstly Thank you for all the chats, laughs aur moments jo humne share kiye."></div>
+
+          <div class="controls">
+
+            <button class="btn" data-action="next">Next</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 2: Memories -->
+
+      <section class="page page2" data-page="2">
+
+        <div class="card">
+
+          <div class="type" data-text="Humne bohot saare amazing moments share kiye… late-night talks, memes, small jokes aur wo random moments jo sirf hum samajh sakte the. honestly me ye sab kabhi nahi bhoolunga."></div>
+
+          <div class="controls">
+
+            <button class="btn" data-action="prev">Back</button>
+
+            <button class="btn" data-action="next">Next</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 3: Gratitude -->
+
+      <section class="page page3" data-page="3">
+
+        <div class="card">
+
+          <div class="type" data-text="Thank you, — mujhe samjhne ke liye, mera saath dene ke liye aur care karne ke liye. Humne sach me bohot saari achi memories banayi. I’m really grateful for that."></div>
+
+          <div class="controls">
+
+            <button class="btn" data-action="prev">Back</button>
+
+            <button class="btn" data-action="next">Next</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 4: Motivation -->
+
+      <section class="page page4" data-page="4">
+
+        <div class="card">
+
+          <div class="type" data-text="Apne dreams complete karna, apni life waise jeena jaise aap chahti ho I'm saying this again me apko successful dekhna cahata hu and sorry for my all mistakes ."></div>
+
+          <div class="controls">
+
+            <button class="btn" data-action="prev">Back</button>
+
+            <button class="btn" data-action="next">Next</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 5: Fun Intro -->
+
+      <section class="page page5" data-page="5">
+
+        <div class="card">
+
+          <div class="headline">Now I'm presenting one of the most beautiful shy princess in the universe</div>
+
+          <div class="controls">
+
+            <button class="btn big" data-action="next">See</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 6: Mirror Page (BLACK) -->
+
+      <section class="page page6 mirror" data-page="6">
+
+        <div class="mirror-wrap">
+
+          <div class="mirror-left">
+
+            <div class="mirror-text">Ache se dekho… ek pyari bacchi dikhegi ✨</div>
+
+            <div class="controls small">
+
+              <button class="btn" id="skipMirror" data-action="next">Next</button>
+
+            </div>
+
+          </div>
+
+          <div class="mirror-right">
+
+            <div class="camera-frame" id="cameraFrame" title="Click to allow mirror">
+
+              <video id="mirrorVideo" autoplay playsinline muted></video>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Page 7: Final Animated Message -->
+
+      <section class="page page7 final" data-page="7">
+
+        <div class="card final-card">
+
+          <div class="final-anim" id="finalAnim">
+
+            <h2 class="glow">Apne dreams complete karna, pressure me mat aana or luxurious life jeena.</h2>
+
+            <p>Stay strong, positive, aur keep growing.</p>
+
+            <p class="big">I will never forget you in my life, Purni🤍
+            Goodbye:</p>
+
+            <div class="controls">
+
+              <button class="btn" id="doneBtn">Close</button>
+
+            </div>
+
+          </div>
+
+          <canvas id="confettiCanvas" class="confetti"></canvas>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
